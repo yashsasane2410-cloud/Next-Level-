@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXT LEVEL | Download Official App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --primary: #3b82f6; 
+            --success: #10b981; 
+            --bg: #020617; 
+            --surface: #0f172a; 
+            --text: #f8fafc; 
+            --text-muted: #94a3b8; 
+            --border: rgba(255, 255, 255, 0.08);
+        }
+        * { box-sizing: border-box; font-family: 'Inter', sans-serif; margin: 0; padding: 0; }
+        body { background-color: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header { padding: 25px 0; text-align: center; border-bottom: 1px solid var(--border); background: rgba(2, 6, 23, 0.8); position: sticky; top: 0; backdrop-filter: blur(10px); z-index: 100;}
+        .logo { font-family: 'Orbitron', sans-serif; font-size: 28px; font-weight: 900; color: var(--primary); letter-spacing: 1px; }
+        
+        /* Hero Section */
+        .hero { text-align: center; padding: 70px 20px 50px; }
+        .hero h1 { font-family: 'Orbitron', sans-serif; font-size: 42px; font-weight: 900; margin-bottom: 15px; line-height: 1.2; text-transform: uppercase; color: #fff; }
+        .hero p { color: var(--text-muted); font-size: 16px; margin-bottom: 35px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        
+        /* Promo Code Box */
+        .promo-box { background: rgba(16, 185, 129, 0.05); border: 1px dashed var(--success); padding: 20px; border-radius: 12px; display: inline-block; margin-bottom: 35px; }
+        .promo-box span { display: block; font-size: 12px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-bottom: 8px; letter-spacing: 1px; }
+        .promo-box strong { font-family: 'Orbitron', sans-serif; font-size: 26px; color: var(--success); letter-spacing: 3px; background: rgba(0,0,0,0.3); padding: 8px 20px; border-radius: 6px; display: inline-block; user-select: all; cursor: pointer; }
+        .promo-desc { font-size: 15px; color: var(--success); font-weight: 700; margin-top: 10px; }
+
+        /* Download Button */
+        .download-btn { display: inline-block; background: var(--primary); color: #fff; text-decoration: none; padding: 18px 45px; font-size: 18px; font-weight: 700; border-radius: 12px; text-transform: uppercase; transition: 0.2s; font-family: 'Orbitron', sans-serif; letter-spacing: 1px; }
+        .download-btn:hover { background: #2563eb; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3); }
+        .download-btn:active { transform: translateY(0); }
+        
+        .safe-tag { display: block; margin-top: 15px; font-size: 13px; color: var(--text-muted); font-weight: 600; }
+        .safe-tag span { color: var(--success); }
+
+        /* Features Section */
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 50px 20px; border-top: 1px solid var(--border); margin-top: 30px;}
+        .feature-card { background: var(--surface); padding: 30px 20px; border-radius: 16px; text-align: center; border: 1px solid var(--border); transition: 0.3s; }
+        .feature-card:hover { border-color: rgba(59, 130, 246, 0.4); transform: translateY(-5px); }
+        .feature-icon { font-size: 38px; margin-bottom: 15px; }
+        .feature-card h3 { font-family: 'Orbitron', sans-serif; font-size: 18px; margin-bottom: 10px; color: #fff; }
+        .feature-card p { font-size: 14px; color: var(--text-muted); }
+        
+        /* How to Install */
+        .install-guide { background: var(--surface); border-radius: 16px; padding: 30px; text-align: left; max-width: 600px; margin: 0 auto; border: 1px solid var(--border); }
+        .install-guide h3 { font-family: 'Orbitron', sans-serif; color: #fff; margin-bottom: 20px; font-size: 20px; text-align: center;}
+        .step { display: flex; align-items: flex-start; margin-bottom: 15px; }
+        .step-num { background: rgba(59, 130, 246, 0.1); color: var(--primary); width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; margin-right: 15px; flex-shrink: 0; }
+        .step-text { color: var(--text-muted); font-size: 14px; padding-top: 4px; }
+        .step-text b { color: #fff; }
+
+        /* Footer */
+        footer { text-align: center; padding: 30px; border-top: 1px solid var(--border); margin-top: 50px; color: var(--text-muted); font-size: 13px; }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 32px; }
+            .promo-box strong { font-size: 22px; }
+            .download-btn { width: 100%; padding: 18px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">NEXT LEVEL</div>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Play Matches.<br>Win Real Cash.</h1>
+            <p>Join daily Free Fire and BGMI tournaments. Show your skills, get kills, and instantly withdraw your winnings.</p>
+
+            <div class="promo-box">
+                <span>Special Signup Offer</span>
+                <strong onclick="alert('Promo Code FREE15 Copied!'); navigator.clipboard.writeText('FREE15');">FREE15</strong>
+                <div class="promo-desc">Use this promo code while signing up to get ₹10 instantly!</div>
+            </div>
+
+            <br>
+
+            <a href="https://www.mediafire.com/file/goj4zhtipp8qaqa/Next+Level.apk/file" target="_blank" class="download-btn">DOWNLOAD APK (LATEST)</a>
+            <div class="safe-tag">🛡️ <span>100% Safe & Secure</span> • Official Build</div>
+        </section>
+
+        <section class="install-guide">
+            <h3>How to Install?</h3>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div class="step-text">Click the Download button above and download the APK file from MediaFire.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-text">Open the downloaded file. If Chrome asks for permission, tap on <b>"Settings"</b> and enable <b>"Allow from this source"</b>.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-text">Install the app, Create a New Account, and enter Promo Code <b>FREE15</b> to get your bonus!</div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🎮</div>
+                <h3>Daily Matches</h3>
+                <p>Play Solo, Duo, or Squad tournaments every day with big prize pools.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Fast Withdrawals</h3>
+                <p>Win a match and transfer your money directly to your UPI in minutes.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎁</div>
+                <h3>Refer & Earn</h3>
+                <p>Invite your gaming friends and earn a bonus for every successful join.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2026 NEXT LEVEL eSports. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
